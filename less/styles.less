@@ -118,8 +118,8 @@ img{
 			}
 			&:hover{
 				a{
-					color: #edb82b;
-					border-color: #edb82b;
+					color: #ffb900;
+					border-color: #ffb900;
 				}
 			}
 		}
@@ -144,7 +144,7 @@ img{
 			background: url(../img/icons/header-telegramm.png) no-repeat center center;
 		}
 		&:hover{
-			border-color: #edb82b;
+			border-color: #ffb900;
 		}
 	}
 	&-lang{
@@ -161,7 +161,7 @@ img{
 		}
 		.trn;
 		&:hover{
-			border-color: #edb82b;
+			border-color: #ffb900;
 		}
 	}
 }
@@ -179,12 +179,15 @@ img{
 	margin-top: 10px;
 	.trn;
 	&:hover{
-		border-color: #edb82b;
+		border-color: #ffb900;
 	}
 }
 
 .logo{
 	display: block;
+	img{
+		display: block;
+	}
 }
 
 .coming-soon{
@@ -213,10 +216,10 @@ img{
 		color: #fff;
 		padding: 20px 20px 18px;
 		border-radius: 30px;
-		border: 3px solid #edb82b;
+		border: 3px solid #ffb900;
 		&:hover{
 			border-color: #fff;
-			color: #edb82b;
+			color: #ffb900;
 		}
 	}
 	&__media{
@@ -294,29 +297,29 @@ img{
 .alert{
 	margin: 55px 0;
 	&--red{
-		border-color: #c25138;
+		border-color: #de5034;
 		background: url(../img/icons/tomato.png) no-repeat 40px center #fbf0f0;
-		color: #c25138;
+		color: #de5034;
 	}
 	&--ylw{
-		border-color: #edb82b;
+		border-color: #ffb900;
 		background: url(../img/icons/carrot.png) no-repeat 40px center #fdf9e8;
-		color: #edb82b;
+		color: #ffb900;
 	}
 	&--grey{
-		border-color: #989589;
+		border-color: #9b968a;
 		background: url(../img/icons/organic.png) no-repeat 40px center #e7e4db;
-		color: #989589;
+		color: #9b968a;
 	}
 	&--green-leaf{
-		border-color: #75bfa2;
+		border-color: #3ac1a3;
 		background: url(../img/icons/leaf.png) no-repeat 40px center #f6fffa;
-		color: #75bfa2;
+		color: #3ac1a3;
 	}
 	&--green-v{
-		border-color: #75bfa2;
+		border-color: #3ac1a3;
 		background: url(../img/icons/green-v.png) no-repeat 40px center #f6fffa;
-		color: #75bfa2;
+		color: #3ac1a3;
 	}
 	border-width: 3px;
 	border-style: solid;
@@ -454,7 +457,7 @@ img{
 				position: absolute;
 				left: 0;
 				top: 2px;
-				border: 3px solid #edb82b;
+				border: 3px solid #ffb900;
 				border-radius: 50%;
 				width: 12px;
 				height: 12px;
@@ -542,17 +545,156 @@ img{
 }
 
 .ylw-dotted-list{
-	color: #edb82b;
+	color: #ffb900;
 	padding-left: 15px;
 	span{
 		color: #363636;
 	}
 }
 
-@media screen and (max-width: 1199px){
-	.header__mid{
-		padding: 0 10px;
+.faq{
+	&-wr{
+		margin: 40px 0 70px;
+	}
+	&__question{
+		background: url(../img/icons/question.png) no-repeat 30px 50% #fff;
+		border-radius: 5px;
+		box-shadow: 0 31px 60px rgba(222,222,222,0.5), 0 10px 20px rgba(222,222,222,0.5);
+		font-size: 16px;
+		line-height: 22px;
+		padding: 17px 17px 17px 70px;
+		cursor: pointer;
+		margin-top: 0;
+		margin-bottom: 20px;
+		font-weight: 400;
+		&:hover{
+			span{
+				border-color: transparent;
+			}
+		}
+		span{
+			border-bottom: 1px dashed #333;
+			padding-bottom: 2px;
+			.trn;
+		}
+	}
+	&__answer{
+		font-size: 17px;
+		line-height: 27px;
+		background: url(../img/icons/exclam.png) no-repeat 35px 4px;
+		padding: 0 17px 17px 70px;
+		display: none;
+		ul{
+			margin-top: 0;
+		}
+	}
+}
 
+.pad45{
+	padding: 45px 0;
+}
+
+.timeline{
+	list-style: none;
+	position: relative;
+	padding: 0;
+	margin: 40px 0;
+	padding: 20px 0;
+	&:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+	&:before{
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 0;
+		bottom: 70px;
+		border-left: 2px dotted #ffcc47;
+		margin-left: -1px;
+	}
+	&__item{
+		display: block;
+		border-radius: 4px;
+		border: 1px solid #ffbd10;
+		background: #fbf9f4;
+		padding: 15px 17px;
+		margin-bottom: 20px;
+		text-align: right;
+		float: left;
+		width: calc(~"50% - 20px");
+		position: relative;
+		&:after{
+			content: "";
+			position: absolute;
+			left: 100%;
+			top: 15px;
+			border-style: solid;
+			border-width: 8px 12px;
+			border-color: transparent transparent transparent #fbf9f4;
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			left: 100%;
+			top: 14px;
+			border-style: solid;
+			border-width: 9px 13px;
+			border-color: transparent transparent transparent #ffbd10;
+		}
+		&:nth-child(even){
+			float: right;
+			text-align: left;
+			margin-top: 20px;
+			margin-bottom: 0;
+			&:after{
+				right: 100%;
+				left: auto;
+				border-color: transparent #fbf9f4 transparent transparent ;
+			}
+			&:before{
+				right: 100%;
+				left: auto;
+				border-color: transparent #ffbd10 transparent transparent;
+			}
+			.timeline__title{
+				&:after{
+					right: auto;
+					left: -25px;
+				}
+			}
+		}
+	}
+	&__title{
+		padding: 0;
+		margin: 0;
+		font-size: 19px;
+		line-height: 25px;
+		color: #333;
+		&:after{
+			content: "";
+			position: absolute;
+			right: -25px;
+			top: 19px;
+			width: 8px;
+			height: 8px;
+			border-radius: 4px;
+			background: #de5034;
+		}
+	}
+	&__text{
+		font-size: 16px;
+		line-height: 20px;
+		color: #333;
+		margin: 5px 0 0;
+	}
+}
+
+@media screen and (max-width: 1199px){
+	.header__mid,
+	.footer__mid{
+		padding: 0 10px;
 	}
 	.header-menu__item, .footer-menu__item{
 		margin-right: 2px;
@@ -578,9 +720,32 @@ img{
 			width: auto;
 		}
 	}
+	.footer{
+		display: block;
+		padding-top: 60px;
+		position: relative;
+		&__left{
+			float: left;
+		}
+		&__right{
+			float: right;
+			padding-top: 15px;
+		}
+		&__mid{
+			position: absolute;
+			top: 15px;
+			left: 0;
+			right: 0;
+			width: auto;
+		}
+	}
 }
 
 @media screen and (max-width: 767px){
+	.footer{
+		height: 90px;
+		padding-top: 20px;
+	}
 	.header{
 		height: 76px;
 		padding-top: 10px;
@@ -634,6 +799,41 @@ img{
 	}
 	.coming-soon-wr{
 		padding-top: 76px;
+	}
+
+	.timeline{
+		margin: 10px 0;
+		padding: 10px 0 10px 30px;
+		&:before{
+			left: 10px;
+		}
+		&__title{
+			font-size: 17px;
+			line-height: 23px;
+			&:after{
+				left: -25px;
+				right: auto;
+			}
+		}
+		&__text{
+			font-size: 15px;
+		}
+		&__item{
+			float: none!important;
+			width: 100%;
+			margin: 0 0 20px 0!important;
+			text-align: left!important;
+			&:nth-child(odd):before{
+				right: 100%;
+				left: auto;
+				border-color: transparent #ffbd10 transparent transparent;
+			}
+			&:nth-child(odd):after {
+				right: 100%;
+				left: auto;
+				border-color: transparent #fbf9f4 transparent transparent;
+			}
+		}
 	}
 
 }
