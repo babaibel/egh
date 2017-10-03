@@ -7,6 +7,7 @@
 	<title>Верстка/Стартовая</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/styles.css">
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -27,19 +28,19 @@
 				<div class="header__mid">
 					<ul class="header-menu">
 						<li class="header-menu__item">
-							<a href="#">Решение</a>
+							<a href="#decision">Решение</a>
 						</li>
 						<li class="header-menu__item">
-							<a href="#">Предпосылки</a>
+							<a href="#premises">Предпосылки</a>
 						</li>
 						<li class="header-menu__item">
-							<a href="#">Что мы предлагаем</a>
+							<a href="#offer">Что мы предлагаем</a>
 						</li>
 						<li class="header-menu__item">
-							<a href="#">Условия TGE</a>
+							<a href="#conditions">Условия TGE</a>
 						</li>
 					</ul>
-					<div class="mob-header visible-sm-block visible-sm">
+					<div class="mob-header visible-sm-block visible-sm visible-xs-block visible-xs">
 						<a href="#" class="header-soc header-soc--fb"></a>
 						<a href="#" class="header-soc header-soc--bitcoin"></a>
 						<a href="#" class="header-soc header-soc--telegramm"></a>
@@ -54,7 +55,12 @@
 					<a href="#" class="header-lang">Язык: <img src="img/icons/lang-rus.png" alt="Русский"> </a>
 				</div>
 
-				<button class="mob-menu-btn visible-sm-block visible-sm visible-xs-block visible-xs" onclick="$(this).parent().toggleClass('_open');"></button>
+				<div class="mob-menu-btn js-mob-menu-btn visible-sm-block visible-sm visible-xs-block visible-xs">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <span></span>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -67,34 +73,34 @@
 						<div class="coming-soon__toptext">Coming Soon</div>
 						<h1 class="coming-soon__title">Сегодня старт Pre-ICO</h1>
 
-						<div class="timer">
+						<div class="timer" id="clockdiv">
 							<div class="timer__block">
-								<div class="timer__num">
+								<div class="timer__num days">
 									12
 								</div>
 								дней
 							</div>
 							<div class="timer__block">
-								<div class="timer__num">
+								<div class="timer__num hours">
 									19
 								</div>
 								часов
 							</div>
 							<div class="timer__block">
-								<div class="timer__num">
+								<div class="timer__num minutes">
 									46
 								</div>
 								минут
 							</div>
 							<div class="timer__block">
-								<div class="timer__num">
+								<div class="timer__num seconds">
 									59
 								</div>
 								секунд
 							</div>
 						</div>
 
-						<a href="#" class="coming-soon__btn">принять участие в TGE (ICO)</a>
+						<a href="#participate-modal" class="coming-soon__btn js-popup-modal">принять участие в TGE (ICO)</a>
 						
 						<div class="coming-soon__media">
 							<iframe width="100%" height="320" src="https://www.youtube.com/embed/LjCzPp-MK48?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -125,7 +131,7 @@
 		</div>
 	</section>
 
-	<section class="decision-wr grey-bg">
+	<section class="decision-wr grey-bg" id="decision">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
@@ -219,7 +225,7 @@
 		</div>
 	</section>
 
-	<section class="premises-wr">
+	<section class="premises-wr" id="premises">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -369,7 +375,7 @@
 		</div>
 	</section>
 
-	<section>
+	<section id="offer" class="offer-wr">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
@@ -442,7 +448,7 @@
 		</div>
 	</section>
 
-	<section class="grey-bg">
+	<section class="grey-bg conditions-wr" id="conditions">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
@@ -452,25 +458,58 @@
 					</div>
 				</div>
 			</div>
-			<div class="row ">
+			<div class="row conditions">
 				<div class="col-md-6">
-					
+					<table class="styled-table">
+						<tr>
+							<th>Amount of investment (ETH)</th>
+							<th>Bonus %</th> 
+							<th>Tokens per ETH</th>
+						</tr>
+						<tr>
+							<td>0 — 3-</td>
+							<td>40</td> 
+							<td>1400</td>
+						</tr>
+						<tr>
+							<td>3 — 5-</td>
+							<td>42</td> 
+							<td>1420</td>
+						</tr>
+						<tr>
+							<td>5 — 10-</td>
+							<td>44</td> 
+							<td>1440</td>
+						</tr>
+						<tr>
+							<td>10 — 20-</td>
+							<td>46</td> 
+							<td>1460</td>
+						</tr>
+						<tr>
+							<td>20 — 50-</td>
+							<td>48</td> 
+							<td>1480</td>
+						</tr>
+						<tr>
+							<td>50+</td>
+							<td>50</td> 
+							<td>1500</td>
+						</tr>
+					</table>
 				</div>
 				<div class="col-md-6">
 					<p>Pre-Token Generation Event (Pre-ICO) будет проводиться
 					с 27 сентября по 04 октября 2017 года и начнется:</p>
-
 					<ul class="ylw-dotted-list">
 						<li><span>15:00 Лондон</span></li>
 						<li><span>17:00 Москва</span></li>
 						<li><span>22:00 Гонконг</span></li>
 					</ul>
-					 
 					<p>Все непроданные токены <b>будут сожжены</b>.<br>
 					У нас не смарт-контракты, <b>мы не встраиваем скрытых условий</b>.<br>
 					Событие генерации токенов (ICO) будет проведено 
 					в ноябре-декабре 2017 года.</p>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -1083,7 +1122,70 @@
 		</div>
 	</footer>
 
+	<div id="participate-modal" class="popup-block mfp-hide">
+		<div class="popup-block__header">
+			<h2 class="h2-popup-title">Принять участие</h2>
+		</div>
+		<div class="popup-block__body">
+			<div class="popup-form cleara">
+				<form class="js-form" data-title="Спасибо!" data-text="Скоро мы вам перезвоним!">
+					<div class="popup-form__row">
+						<label class="checkbox">
+							<input type="checkbox" checked hidden />
+							<span class="checkbox__icon"></span>
+							<span class="checkbox__text">Подтверждаю, что я не являюсь гражданином или резидентом Соединенных Штатов и не проживаю постоянно или временно на территории Соединенных Штатов, включая Пуэрто-Рико, Виргинские острова Соединенных Штатов и любые другие территории Соединенных Штатов, также подтверждаю, что не покупаю ATL токены будучи гражданином или резидентом Соединенных Штатов либо совершаю действия от имени гражданина, резидента или юридического лица Соединенных Штатов.</span>
+						</label>
+					</div>
+					<div class="popup-form__row">
+						<label class="checkbox">
+							<input type="checkbox" checked hidden />
+							<span class="checkbox__icon"></span>
+							<span class="checkbox__text">Подтвердите, что вы прочитали и поняли Пользовательское соглашение и Политику конфиденциальности и принимаете все условия, обязательства, аффирмации, представления и гарантии, описанные в упомянутых документах, и соглашаетесь с ними.</span>
+						</label>
+					</div>
+					<div class="popup-form__row">
+						<label class="checkbox">
+							<input type="checkbox" checked hidden />
+							<span class="checkbox__icon"></span>
+							<span class="checkbox__text">Подтвердите, что вы прочитали и поняли Условия продажи токенов и принимаете все условия, обязательства, аффирмации, представления и гарантии, описанные в настоящих Условиях, и соглашаетесь с ними.</span>
+						</label>
+					</div>
+					<div class="popup-form__row">
+						<label class="checkbox">
+							<input type="checkbox" checked hidden />
+							<span class="checkbox__icon"></span>
+							<span class="checkbox__text">Подтвердите, что вы прочитали и поняли White Paper.</span>
+						</label>
+					</div>
+					
+					<div class="center">
+						<input type="submit" name="" class="bordered-btn" value="Подтвердить и продолжить">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="after-modal" class="popup-block mfp-hide">
+		<div class="popup-block__header">
+			<h2 class="h2-popup-title">Принять участие</h2>
+		</div>
+		<div class="popup-block__body">
+			<div class="popup-text center">
+				<p>Отправьте Ether (только) на адрес контракта</p>
+				<p>0xea678a0d60ac630d271f632266e55e778a0eb594</p>
+				<p>Скопировать адрес контракта</p>
+				<p>Рекомендуемый gasLimit 150000</p>
+				<p>НЕ ОТПРАВЛЯЙТЕ ETH из личных кабинетов бирж Poloniex, Kraken и др.</p>
+			</div>
+			<div class="center">
+				<div class="bordered-btn popup-modal-dismiss">Скопировать адрес</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/js.js"></script>
 </body>
 </html>
