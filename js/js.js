@@ -120,9 +120,11 @@ $(function() {
 		$('.header').removeClass('_open');
 		$('.js-mob-menu-btn').removeClass('_open');
 
-		//забираем идентификатор бока с атрибута href
-		var id  = $(this).attr('href'),
-			top = $(id).offset().top;
+		// //забираем идентификатор бока с атрибута href
+		// var id  = $(this).attr('href'),
+		// 	top = $(id).offset().top;
+		var id = $(this).attr('href').split('#')[1], 
+			top = $('#' + id).offset().top;
 		
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top - fixed_offset}, 1500);
