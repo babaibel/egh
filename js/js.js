@@ -113,7 +113,7 @@ $(function() {
 		fixed_offset = $('.header-wr').height();
 	});
 
-	$(".header-menu").on("click",".header-menu__item a", function (event) {
+	$(".header-menu, .footer-menu").on("click",".header-menu__item a, footer-menu__item a", function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
 
@@ -137,5 +137,14 @@ $(function() {
 		$(this).parent().toggleClass('_open');
 		$(this).toggleClass('_open');
 	});
+
+	$(".js-lang-btn").click(function () {
+		$(this).next('.lang-menu').toggleClass('_open');
+		$(this).toggleClass('_active');
+	});
 	
+});
+
+$(function() {
+	AOS.init();
 });

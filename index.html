@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+	<link href="css/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -44,15 +45,35 @@
 						<a href="#" class="header-soc header-soc--fb"></a>
 						<a href="#" class="header-soc header-soc--bitcoin"></a>
 						<a href="#" class="header-soc header-soc--telegramm"></a>
-						<a href="#" class="header-lang">Язык: <img src="img/icons/lang-rus.png" alt="Русский"> </a>
+						<div class="header-lang-wr">							
+							<div class="header-lang js-lang-btn">Язык: <img src="img/icons/lang-rus.png" alt="Русский"> </div>
+							<ul class="lang-menu">
+								<li>
+									<a href="#"><img src="img/icons/lang-rus.png" alt="Русский"> Русский</a>
+								</li>
+								<li>
+									<a href="#"><img src="img/icons/gb.png" alt="English"> English</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 
-				<div class="header__right hidden-sm hidden-sm-block hidden-xs hidden-xs-block>
+				<div class="header__right hidden-sm hidden-sm-block hidden-xs hidden-xs-block">
 					<a href="#" class="header-soc header-soc--fb"></a>
 					<a href="#" class="header-soc header-soc--bitcoin"></a>
 					<a href="#" class="header-soc header-soc--telegramm"></a>
-					<a href="#" class="header-lang">Язык: <img src="img/icons/lang-rus.png" alt="Русский"> </a>
+					<div class="header-lang-wr">							
+						<div class="header-lang js-lang-btn">Язык: <img src="img/icons/lang-rus.png" alt="Русский"> </div>
+						<ul class="lang-menu">
+							<li>
+								<a href="#"><img src="img/icons/lang-rus.png" alt="Русский"> Русский</a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/gb.png" alt="English"> English</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 
 				<div class="mob-menu-btn js-mob-menu-btn visible-sm-block visible-sm visible-xs-block visible-xs">
@@ -73,7 +94,7 @@
 						<div class="coming-soon__toptext">Coming Soon</div>
 						<h1 class="coming-soon__title">Сегодня старт Pre-ICO</h1>
 
-						<div class="timer" id="clockdiv">
+						<div class="timer" id="clockdiv" data-aos="flip-up">
 							<div class="timer__block">
 								<div class="timer__num days">
 									12
@@ -120,7 +141,7 @@
 						Сегодня
 					</h2>
 					<div class="bold-text">Люди стали больше следить за своим здоровьем и уделять вниманию качеству продуктов, которые они едят</div>
-					<div class="alert alert--red">
+					<div data-aos="zoom-in" class="alert alert--red">
 						<div class="alert__text">
 							Многие овощи потеряли свой природный вкус.<br>
 							Когда вы последний раз наслаждались помидором или огурцом из магазина?
@@ -139,7 +160,7 @@
 						Решение
 					</h2>
 					<div class="bold-text">Мы знаем как вернуть вкус овощам!</div>
-					<div class="alert alert--ylw">
+					<div class="alert alert--ylw" data-aos="zoom-in">
 						<div class="alert__text">
 							EGH — это инновационный тепличный комплекс для сложных климатических условий, в котором овощи выращиваются в живой земле. 
 						</div>
@@ -194,7 +215,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
-					<div class="alert alert--grey">
+					<div class="alert alert--grey" data-aos="zoom-in">
 						<div class="alert__text">
 							Органический продукт - это продукт, выращенный без применения каких либо химических удобраений, пестицидов, химических препаратов для борьбы с вредителями, стимуляторов роста и несо ГМО.
 						</div>
@@ -208,7 +229,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
-					<div class="participate">
+					<div class="participate" data-aos="zoom-out" data-aos-offset="350">
 						<h2 class="h2-title h2-title--wico">
 							Принять участие<br>
 							в партнерской программе
@@ -275,7 +296,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
-					<div class="alert alert--green-leaf">
+					<div class="alert alert--green-leaf" data-aos="zoom-in">
 						<div class="alert__text">
 							По данным IFOAM, мировой рынок органической продукции к 2020 году достигнет 250 млрд. долл. США
 						</div>
@@ -308,7 +329,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
-					<div class="participate">
+					<div class="participate" data-aos="zoom-out" data-aos-offset="350">
 						<h2 class="h2-title h2-title--wico">
 							Принять участие<br>
 							в партнерской программе
@@ -343,7 +364,7 @@
 	<section class="benefit-wr">
 		<div class="container">
 			<div class="row benefit">
-				<div class="col-md-6 col-sm-6">
+				<div class="col-md-6 col-sm-6" data-aos="zoom-in-right" data-aos-offset="350">
 					<ul class="benefit__list clearfix">
 						<li>
 							Увеличивает продолжительность жизни на 8-14 лет
@@ -386,7 +407,7 @@
 						Участвуя в Token Generating Event (ICO), вы вступаете в клуб EGH
 					</div>
 
-					<div class="alert alert--green-v">
+					<div class="alert alert--green-v" data-aos="zoom-in">
 						<div class="alert__text">
 							Основная цель клуба — это выращивание органической продукции.<br><br>
 							Выращивание органической продукции будет отгружаться в приоритетном порядке членам клуба EGH, а после в крупные города России и Китая.
@@ -431,7 +452,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
-					<div class="participate">
+					<div class="participate" data-aos="zoom-out" data-aos-offset="350">
 						<h2 class="h2-title h2-title--wico">
 							Принять участие<br>
 							в партнерской программе
@@ -460,7 +481,7 @@
 			</div>
 			<div class="row conditions">
 				<div class="col-md-6">
-					<table class="styled-table">
+					<table class="styled-table" data-aos="flip-left">
 						<tr>
 							<th>Amount of investment (ETH)</th>
 							<th>Bonus %</th> 
@@ -525,71 +546,71 @@
 						Как мы к этому пришли
 					</div>
 					<ul class="timeline">
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-right">
 							<h4 class="timeline__title">Лето 2014</h4>
 							<p class="timeline__text">Идея</p>
 						</li>
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-left">
 							<h4 class="timeline__title">Лето 2014 - Зима 2015</h4>
 							<p class="timeline__text">Исследование рынка</p>
 						</li>
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-right">
 							<h4 class="timeline__title">Весна 2015 - лето 2016</h4>
 							<p class="timeline__text">Знакомство с технологиями «голландских теплиц»</p>
 						</li>
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-left">
 							<h4 class="timeline__title">Весна 2015 - лето 2016</h4>
 							<p class="timeline__text">Знакомство с технологиями «сингапурских теплиц»</p>
 						</li>
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-right">
 							<h4 class="timeline__title">Весна 2015 - Лето 2016</h4>
 							<p class="timeline__text">Знакомство с технологиями «японских теплиц»</p>
 						</li>
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-left">
 							<h4 class="timeline__title">Лето 2016 -Зима 2017</h4>
 							<p class="timeline__text">Знакомство с технологиями Органической продукции</p>
 						</li>
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-right">
 							<h4 class="timeline__title">Сентябрь 2017</h4>
 							<p class="timeline__text">Pre-Token Generating Event (Pre-ICO)</p>
 						</li>
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-left">
 							<h4 class="timeline__title">Ноябрь - декабрь 2017</h4>
 							<p class="timeline__text">Token Generating Event (ICO)</p>
 						</li>
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-right">
 							<h4 class="timeline__title">Декабрь 2017</h4>
 							<p class="timeline__text">Приобретение земли рядом с Москвой</p>
 						</li>
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-left">
 							<h4 class="timeline__title">Февраль 2018</h4>
 							<p class="timeline__text">Старт строительства EGH-теплицы рядом с Москвой</p>
 						</li>
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-right">
 							<h4 class="timeline__title">Июнь - Ноябрь 2018</h4>
 							<p class="timeline__text">Налаживание каналов сбыта</p>
 						</li>
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-left">
 							<h4 class="timeline__title">Осень 2018</h4>
 							<p class="timeline__text">Привлечение других органических фермеров в клуб EGH</p>
 						</li>
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-right">
 							<h4 class="timeline__title">Осень 2018</h4>
 							<p class="timeline__text">Продажа франшизы EGH другим фермерам</p>
 						</li>
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-left">
 							<h4 class="timeline__title">Зима 2019</h4>
 							<p class="timeline__text">Приобретение земли рядом с Санкт-Петербургом</p>
 						</li>
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-right">
 							<h4 class="timeline__title">Весна 2019</h4>
 							<p class="timeline__text">Старт строительства EGH-теплицы рядом с Санкт-Петербургом</p>
 						</li>
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-left">
 							<h4 class="timeline__title">Зима 2020</h4>
 							<p class="timeline__text">Приобретение земли рядом с границей с Китаем</p>
 						</li>
-						<li class="timeline__item">
+						<li class="timeline__item" data-aos="fade-right">
 							<h4 class="timeline__title">Апрель 2020</h4>
 							<p class="timeline__text">Старт строительства EGH-теплицы рядом с границей с Китаем</p>
 						</li>
@@ -786,7 +807,7 @@
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0">
 					<div class="economy-sectors">
-						<div class="economy-sectors__item">
+						<div class="economy-sectors__item" data-aos="zoom-in-up">
 							<div class="economy-sectors__item-title">
 								Нефтегазовая и нефтехимическая
 							</div>
@@ -797,7 +818,7 @@
 							</ul>
 						</div>
 
-						<div class="economy-sectors__item">
+						<div class="economy-sectors__item" data-aos="zoom-in-up">
 							<div class="economy-sectors__item-title">
 								Легкая промышленность
 							</div>
@@ -807,7 +828,7 @@
 							</ul>
 						</div>
 
-						<div class="economy-sectors__item">
+						<div class="economy-sectors__item" data-aos="zoom-in-up">
 							<div class="economy-sectors__item-title">
 								Рыбоводство
 							</div>
@@ -817,7 +838,7 @@
 							</ul>
 						</div>
 
-						<div class="economy-sectors__item">
+						<div class="economy-sectors__item" data-aos="zoom-in-up">
 							<div class="economy-sectors__item-title">
 								Аэрокосмическая промышленность
 							</div>
@@ -827,7 +848,7 @@
 								<li>ОАО «Уфимское моторостроительное производственное объединение».</li>
 							</ul>
 						</div>
-						<div class="economy-sectors__item">
+						<div class="economy-sectors__item" data-aos="zoom-in-up">
 							<div class="economy-sectors__item-title">
 								Банковский сектор
 							</div>
@@ -837,7 +858,7 @@
 								<li>АКБ «АВТОВАЗБАНК».</li>
 							</ul>
 						</div>
-						<div class="economy-sectors__item">
+						<div class="economy-sectors__item" data-aos="zoom-in-up">
 							<div class="economy-sectors__item-title">
 								Холдинговые компании
 							</div>
@@ -849,7 +870,7 @@
 								<li>ЗАО «Московская Нефтегазовая Компания».</li>
 							</ul>
 						</div>
-						<div class="economy-sectors__item">
+						<div class="economy-sectors__item" data-aos="zoom-in-up">
 							<div class="economy-sectors__item-title">
 								Прочие
 							</div>
@@ -1096,18 +1117,18 @@
 				</div>
 
 				<div class="footer__mid hidden-sm hidden-xs">
-					<ul class="footer-menu">
-						<li class="footer-menu__item">
-							<a href="#">Решение</a>
+					<ul class="header-menu">
+						<li class="header-menu__item">
+							<a href="#decision">Решение</a>
 						</li>
-						<li class="footer-menu__item">
-							<a href="#">Предпосылки</a>
+						<li class="header-menu__item">
+							<a href="#premises">Предпосылки</a>
 						</li>
-						<li class="footer-menu__item">
-							<a href="#">Что мы предлагаем</a>
+						<li class="header-menu__item">
+							<a href="#offer">Что мы предлагаем</a>
 						</li>
-						<li class="footer-menu__item">
-							<a href="#">Условия TGE</a>
+						<li class="header-menu__item">
+							<a href="#conditions">Условия TGE</a>
 						</li>
 					</ul>
 				</div>
@@ -1186,6 +1207,7 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/aos.js"></script>
 	<script type="text/javascript" src="js/js.js"></script>
 </body>
 </html>
