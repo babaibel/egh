@@ -287,6 +287,7 @@ img {
 .coming-soon-wr {
   position: relative;
   background: url(../img/coming-soon-bg.jpg) no-repeat center center #363636;
+  background-size: cover;
   padding: 124px 0;
 }
 .coming-soon-wr:after {
@@ -331,9 +332,13 @@ img {
 .coming-soon__media iframe {
   width: 100%;
 }
-.premises-wr,
+.premises-wr {
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
 .offer-wr,
 .conditions-wr {
+  padding-top: 40px;
   margin-bottom: 20px;
 }
 .timer {
@@ -560,7 +565,9 @@ img {
 .benefit-wr {
   position: relative;
   background: url(../img/benefit-bg.jpg) no-repeat center center;
-  padding: 11px 0;
+  background-size: cover;
+  padding: 110px 0;
+  margin: 0 0 45px;
 }
 .benefit-wr:before {
   background-image: url(../img/curve-bottom.png);
@@ -637,6 +644,7 @@ img {
   margin: 40px 0 20px;
 }
 .premises-wr {
+  padding-top: 40px;
   margin-bottom: 40px;
 }
 .premises__list {
