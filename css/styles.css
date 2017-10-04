@@ -22,6 +22,9 @@ body {
   color: #363636;
   height: 100%;
 }
+section {
+  overflow: hidden;
+}
 a {
   text-decoration: none;
   color: #363636;
@@ -36,12 +39,6 @@ p {
 img {
   max-width: 100%;
   outline: none;
-}
-.wrap {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  padding: 0;
 }
 .mgb55 {
   margin-bottom: 55px;
@@ -203,6 +200,12 @@ img {
   visibility: visible;
   transform: translateY(0);
 }
+.footer-wr .header-lang-wr .lang-menu {
+  top: auto;
+  bottom: 40px;
+  left: auto;
+  right: 0;
+}
 .mob-menu-btn {
   display: block;
   float: right;
@@ -282,9 +285,22 @@ img {
   text-align: center;
 }
 .coming-soon-wr {
+  position: relative;
   background: url(../img/coming-soon-bg.jpg) no-repeat center center #363636;
-  background-size: 1920px;
   padding: 124px 0;
+}
+.coming-soon-wr:after {
+  background-image: url(../img/curve-top.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 100%;
+  bottom: 0;
+  content: "";
+  height: 40px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 .coming-soon__title {
   font: 50px/52px 'LatoWebHeavy', sans-serif;
@@ -318,8 +334,7 @@ img {
 .premises-wr,
 .offer-wr,
 .conditions-wr {
-  padding-top: 20px;
-  margin-top: -20px;
+  margin-bottom: 20px;
 }
 .timer {
   font-size: 0;
@@ -483,6 +498,7 @@ img {
   background: #edbd3e;
   z-index: 2;
   opacity: 0;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .decision__item:hover {
@@ -495,28 +511,82 @@ img {
   opacity: 0.8;
 }
 .participate {
-  padding: 110px 0;
+  position: relative;
 }
 .participate-wr {
-  background: url(../img/participate1-bg.jpg) no-repeat center center;
+  position: relative;
+  background: url(../img/participate-bg.jpg) no-repeat center center;
   background-size: cover;
-  padding: 85px 0;
-}
-.participate-wr--ww {
-  background: url(../img/participate-ww-bg.jpg) no-repeat center center;
-  background-size: cover;
-}
-.participate-wr--wg {
-  background: url(../img/participate-wg-bg.jpg) no-repeat center center;
-  background-size: cover;
-}
-.benefit {
   padding: 110px 0;
 }
+.participate-wr:before {
+  background-image: url(../img/curve-bottom-g.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100%;
+  content: "";
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.participate-wr:after {
+  background-image: url(../img/curve-top.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 100%;
+  bottom: 0;
+  content: "";
+  height: 40px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.participate-wr--ww:before {
+  background-image: url(../img/curve-bottom.png);
+}
+.participate-wr--ww:after {
+  background-image: url(../img/curve-top.png);
+}
+.participate-wr--wg:before {
+  background-image: url(../img/curve-bottom.png);
+}
+.participate-wr--wg:after {
+  background-image: url(../img/curve-top-g.png);
+}
 .benefit-wr {
+  position: relative;
   background: url(../img/benefit-bg.jpg) no-repeat center center;
-  background-size: cover;
-  padding: 85px 0;
+  padding: 11px 0;
+}
+.benefit-wr:before {
+  background-image: url(../img/curve-bottom.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100%;
+  content: "";
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.benefit-wr:after {
+  background-image: url(../img/curve-top.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 100%;
+  bottom: 0;
+  content: "";
+  height: 40px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 .benefit__list {
   list-style: none;
@@ -566,6 +636,9 @@ img {
 .premises {
   margin: 40px 0 20px;
 }
+.premises-wr {
+  margin-bottom: 40px;
+}
 .premises__list {
   list-style: none;
   margin: 0;
@@ -599,7 +672,7 @@ img {
   max-width: 100%;
 }
 .team {
-  margin: 30px;
+  margin: 30px 0;
 }
 .team__item {
   margin: 30px 0;
@@ -930,6 +1003,10 @@ img {
 .popup-block .bordered-btn:hover {
   background: #ffbd10;
 }
+.popup-block .bordered-btn:disabled {
+  background: #ededed;
+  border-color: #ededed;
+}
 .popup-form__row {
   margin: 0 0 30px;
 }
@@ -1049,6 +1126,9 @@ img {
     font: 14px/31px 'LatoWeb', sans-serif;
     padding: 0 10px;
   }
+  .header .logo {
+    margin: 4px 0 0;
+  }
   .coming-soon-wr {
     padding: 76px 0 30px;
     margin-bottom: 60px;
@@ -1066,6 +1146,11 @@ img {
   .footer__right {
     float: right;
     padding-top: 15px;
+  }
+  .footer .header-lang {
+    margin-left: 5px;
+    font: 13px/23px 'LatoWeb', sans-serif;
+    padding: 0 5px;
   }
   .experience .col-sm-6:nth-child(2n+1) {
     clear: left;
@@ -1101,6 +1186,16 @@ img {
   .coming-soon__title {
     font: 34px/38px 'LatoWebHeavy', sans-serif;
     margin-bottom: 50px;
+  }
+  .benefit-wr:after,
+  .participate-wr:after,
+  .coming-soon-wr:after {
+    background-size: 100% 50%;
+  }
+  .benefit-wr:before,
+  .participate-wr:before,
+  .coming-soon-wr:before {
+    background-size: 100% 50%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1169,8 +1264,13 @@ img {
   .premises-wr,
   .offer-wr,
   .conditions-wr {
+    margin-bottom: 15px;
+  }
+  .conditions-wr {
     padding-top: 15px;
-    margin-top: -15px;
+  }
+  .team__item {
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -1185,5 +1285,59 @@ img {
     width: 60px;
     height: 60px;
     font: 34px/56px 'LatoWebHeavy', sans-serif;
+  }
+  .coming-soon {
+    padding-top: 60px;
+  }
+  .coming-soon__media iframe {
+    height: 280px;
+  }
+  .coming-soon__btn {
+    padding: 15px 20px 13px;
+  }
+  .alert {
+    margin: 45px 0;
+    padding: 105px 25px 25px;
+    background-position: center 20px!important;
+  }
+  .alert__text {
+    font: 17px/25px 'LatoWebHeavy', sans-serif;
+  }
+  .participate-wr {
+    padding: 55px 0;
+  }
+  .styled-table th,
+  .styled-table td {
+    padding: 10px;
+  }
+  .footer {
+    height: auto;
+    padding: 20px 0;
+  }
+  .footer__left {
+    float: none;
+  }
+  .footer .logo {
+    display: block;
+    width: 223px;
+    margin: 0 auto;
+  }
+  .footer .logo img {
+    display: inline-block;
+  }
+  .footer__right {
+    float: none;
+    text-align: center;
+  }
+  .popup-block__body {
+    padding: 25px;
+  }
+  .popup-block .bordered-btn {
+    padding: 15px 15px 13px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .conditions {
+    margin: 35px 0;
   }
 }

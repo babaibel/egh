@@ -33,6 +33,10 @@ body {
   height: 100%;
 }
 
+section{
+	overflow: hidden;
+}
+
 a {
   outline: none;
   text-decoration: none;
@@ -51,13 +55,6 @@ p{
 img{
   max-width: 100%;
   outline:none;
-}
-
-.wrap{
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  padding: 0;
 }
 
 .mgb55{
@@ -212,6 +209,17 @@ img{
 	}
 }
 
+.footer-wr{
+	.header-lang-wr{
+		.lang-menu{
+			top: auto;
+			bottom: 40px;
+			left: auto;
+			right: 0;
+		}
+	}
+}
+
 .mob-menu-btn{
 	display: block;
 	float: right;
@@ -296,9 +304,23 @@ img{
 
 .coming-soon{
 	&-wr{
+		position: relative;
 		background: url(../img/coming-soon-bg.jpg) no-repeat center center #363636;
-		background-size: 1920px;
+		// background-size: 1920px;
 		padding: 124px 0;
+		&:after{
+			background-image: url(../img/curve-top.png);
+			background-repeat: no-repeat;
+			background-position: center bottom;
+			background-size: 100% 100%;
+			bottom: 0;
+			content: "";
+			height: 40px;
+			left: 0;
+			position: absolute;
+			width: 100%;
+			z-index: 1;
+		}
 	}
 	padding-top: 80px;
 	color: #fff;
@@ -336,8 +358,7 @@ img{
 .premises-wr,
 .offer-wr,
 .conditions-wr{
-	padding-top: 20px;
-	margin-top: -20px;
+	margin-bottom: 20px;
 }
 
 .timer{
@@ -510,7 +531,7 @@ img{
 			background: #edbd3e;
 			z-index: 2;
 			opacity: 0;
-			transition: all 0.3s ease;
+			.trn;
 		}
 		&:hover{
 			color: #fff;
@@ -525,28 +546,110 @@ img{
 }
 
 .participate{
-	padding: 110px 0;
+	
+	position: relative;
 	&-wr{
-		background: url(../img/participate1-bg.jpg) no-repeat center center;
+		position: relative;
+		background: url(../img/participate-bg.jpg) no-repeat center center;
 		background-size: cover;
-		padding: 85px 0;
+		padding: 110px 0;
+		&:before{
+			background-image: url(../img/curve-bottom-g.png);
+			background-repeat: no-repeat;
+			background-position: center top;
+			background-size: 100% 100%;
+			content: "";
+			height: 40px;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+		&:after{
+			background-image: url(../img/curve-top.png);
+			background-repeat: no-repeat;
+			background-position: center bottom;
+			background-size: 100% 100%;
+			bottom: 0;
+			content: "";
+			height: 40px;
+			left: 0;
+			position: absolute;
+			width: 100%;
+			z-index: 1;
+		}
 		&--ww{
-			background: url(../img/participate-ww-bg.jpg) no-repeat center center;
-			background-size: cover;
+			&:before{
+				background-image: url(../img/curve-bottom.png);
+			}
+			&:after{
+				background-image: url(../img/curve-top.png);
+			}
 		}
 		&--wg{
-			background: url(../img/participate-wg-bg.jpg) no-repeat center center;
-			background-size: cover;
+			&:before{
+				background-image: url(../img/curve-bottom.png);
+			}
+			&:after{
+				background-image: url(../img/curve-top-g.png);
+			}
 		}
+		
 	}
 }
 
+// .participate{
+// 	padding: 110px 0;
+// 	position: relative;
+// 	&-wr{
+// 		padding: 85px 0;
+// 		position: relative;
+// 		background: url(../img/participate1-bg.jpg) no-repeat center center;
+// 		background-size: cover;
+// 		&--ww{
+// 			background: url(../img/participate-ww-bg.jpg) no-repeat center center;
+// 			background-size: cover;
+// 		}
+// 		&--wg{
+// 			background: url(../img/participate-wg-bg.jpg) no-repeat center center;
+// 			background-size: cover;
+// 		}
+// 	}
+// }
+
+
 .benefit{
-	padding: 110px 0;
 	&-wr{
+		position: relative;
 		background: url(../img/benefit-bg.jpg) no-repeat center center;
-		background-size: cover;
-		padding: 85px 0;
+		padding: 11px 0;
+		&:before{
+			background-image: url(../img/curve-bottom.png);
+			background-repeat: no-repeat;
+			background-position: center top;
+			background-size: 100% 100%;
+			content: "";
+			height: 40px;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+		&:after{
+			background-image: url(../img/curve-top.png);
+			background-repeat: no-repeat;
+			background-position: center bottom;
+			background-size: 100% 100%;
+			bottom: 0;
+			content: "";
+			height: 40px;
+			left: 0;
+			position: absolute;
+			width: 100%;
+			z-index: 1;
+		}
 	}
 	&__list{
 		list-style: none;
@@ -598,6 +701,9 @@ img{
 
 .premises{
 	margin: 40px 0 20px;
+	&-wr{
+		margin-bottom: 40px;
+	}
 	&__list{
 		list-style: none;
 		margin: 0;
@@ -634,7 +740,7 @@ img{
 }
 
 .team{
-	margin: 30px;
+	margin: 30px 0;
 	&__item{
 		margin: 30px 0;
 		&-inner{
@@ -983,6 +1089,10 @@ img{
 		&:hover{
 			background:#ffbd10;
 		}
+		&:disabled{
+			background: #ededed;
+			border-color: #ededed;
+		}
 	}
 }
 .popup-form{
@@ -1109,6 +1219,9 @@ img{
 			font: 14px/31px @font;
 			padding: 0 10px;
 		}
+		.logo{
+			margin: 4px 0 0;
+		}
 	}
 	.coming-soon-wr{
 		padding: 76px 0 30px;
@@ -1126,6 +1239,11 @@ img{
 		&__right{
 			float: right;
 			padding-top: 15px;
+		}
+		.header-lang{
+			margin-left: 5px;
+			font: 13px/23px @font;
+			padding: 0 5px;
 		}
 	}
 	.experience{
@@ -1176,7 +1294,16 @@ img{
 		}
 	}
 
-	
+	.benefit-wr,
+	.participate-wr,
+	.coming-soon-wr{
+		&:after{
+			background-size: 100% 50%;
+		}
+		&:before{
+			background-size: 100% 50%;
+		}
+	}
 }
 
 @media screen and (max-width: 767px){
@@ -1252,8 +1379,15 @@ img{
 	.premises-wr,
 	.offer-wr,
 	.conditions-wr{
+		margin-bottom: 15px;
+	}
+	.conditions-wr{
 		padding-top: 15px;
-		margin-top: -15px;
+	}
+	.team{
+		&__item{
+			margin-bottom: 20px;
+		}
 	}
 }
 
@@ -1270,4 +1404,64 @@ img{
 			font: 34px/56px @fontb;
 		}
 	}
+	.coming-soon{
+		padding-top: 60px;
+		&__media{
+			iframe{
+				height: 280px;
+			}
+		}
+		&__btn{
+			padding: 15px 20px 13px;
+		}
+	}
+	.alert{
+		margin: 45px 0;
+		padding: 105px 25px 25px;
+		background-position: center 20px!important;
+		&__text{
+			font: 17px/25px @fontb;
+		}
+	}
+	.participate-wr{
+		padding: 55px 0;
+	}
+	.styled-table th, .styled-table td{
+		padding: 10px;
+	}
+	.footer{
+			height: auto;
+			padding: 20px 0;
+		&__left{
+			float: none;
+		}
+		.logo{
+			display: block;
+			width: 223px;
+			margin: 0 auto;
+			img{
+				display: inline-block;
+			}
+		}
+		&__right{
+			float: none;
+			text-align: center;
+		}
+	}
+
+	.popup-block{
+		&__body{
+			padding: 25px;
+		}
+		.bordered-btn{
+			padding: 15px 15px 13px;
+			font-size: 14px;
+			line-height: 16px;
+
+		}
+	}
+	.conditions{
+		margin: 35px 0;
+	}
+
 }
